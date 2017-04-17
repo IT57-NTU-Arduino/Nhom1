@@ -1,0 +1,63 @@
+int bA = 3, bB = 2, bL = 1, bR = 0;
+int lA1 = 4, lA2 = 5, lA3 = 6, lB = 7, lL = 8, lR = 9;
+
+void setup() {  
+  pinMode(bA, INPUT);  
+  pinMode(bB, INPUT);
+  pinMode(bL, INPUT);
+  pinMode(bR, INPUT);
+  pinMode(lA1, OUTPUT);  
+  pinMode(lA2, OUTPUT);  
+  pinMode(lA3, OUTPUT);  
+  pinMode(lB, OUTPUT);  
+  pinMode(lL, OUTPUT);  
+  pinMode(lR, OUTPUT);  
+}
+
+void loop() {
+
+}
+void ledA(int btstt)
+{
+	
+}
+void ledB(int btstt)
+{
+	if(btsst == HIGH)
+      digitalWrite(lB, LOW);
+  	else
+    {
+      digitalWrite(lB, HIGH);
+      digitalWrite(lA1, LOW);
+      digitalWrite(lA2, LOW);
+      digitalWrite(lA3, LOW);
+    }
+}
+void ledL(int btstt)
+{
+	if(btsst == HIGH)
+      digitalWrite(lL, LOW);
+  	else
+    {
+      digitalWrite(lL, HIGH);
+      digitalWrite(lA1, LOW);
+      digitalWrite(lA2, LOW);
+      digitalWrite(lA3, LOW);
+      digitalWrite(lB, LOW);
+      digitalWrite(lR, LOW);
+    }
+}
+void ledR(int btstt)
+{
+	if(btsst == HIGH)
+      digitalWrite(lR, LOW);
+  	else
+    {
+      digitalWrite(lR, HIGH);
+      digitalWrite(lA1, LOW);
+      digitalWrite(lA2, LOW);
+      digitalWrite(lA3, LOW);
+      digitalWrite(lB, LOW);
+      digitalWrite(lL, LOW);
+    }
+}
